@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.container section div{
+    width: 100%;
+}
+
+.flexContainer article div{
+    width: 70%;
+}
+
+section{
+    margin-bottom: 30px;
+}
+
+.fullContainer p, footer{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    color:white;
+    min-width:252px;
+    
+}
+
+.container h1, footer{
+    min-width:310px;
+}
+
+h1{
+    margin:20px 20px;
+    text-align: center;
+}
+.fullContainer, footer {
+    width: 100%;
+    background-color: darkslategray;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /*border: 1px solid rgb(129, 129, 8);*/
+}
+
+.flexContainer {
+    display: flex;
+    justify-content:space-between;
+}
+
+
+#botonTags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    
+}
+
+#botonTags button{
+    padding: 10px 15px;
+    background-color:darkslategray ;
+    color:white;
+    margin: 20px 0;
+    border-radius:10px ;
+}
+
+#mensaje, #relacionadas h2{
+    margin: 30px;
+    text-align: center;
+}
+
+
+
+.flexContainer div img:hover{
+    opacity: 0.7;
+}
+
+/* ===============================
+            768px
+=================================== */
+
+@media screen and (min-width:768px) {
+    .container {
+        width: 75%;
+    }
+
+    .flexContainer>* {
+        width: calc(50% - 20px);
+    }
+
+    .flexContainer article div{
+        width: 80%;
+    }
+    
+}
+
+/* 768px */
+
+/* ===============================
+            992px
+=================================== */
+
+@media screen and (min-width:992px) {
+    .container {
+        width: 65%;
+    }
+
+    .flexContainer>* {
+        width: calc(25% - 20px);
+    }
+
+    .flexContainer article div{
+        width: 90%;
+    }
+}
+
+/* 992px */
+
+/* ===============================
+            1200px
+=================================== */
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+/* 1200px */
