@@ -5,25 +5,35 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+
+/*Todas las imagenes ocuparan el 100 de su padre*/
 img{
     width: 100%;
 }
+
+/*Para todo div que se encuentre dentro de un section, (section)que se encuentre dentro de una etiqueta con clase container*/
 .container section div{
     width: 100%;
 }
 
+/*Para todo div que se encuentre dentro de article, (article) que se encuentre dentro una etiqueta con clase flexContainer */
 .flexContainer article div{
     width: 70%;
 }
 
+/*Para todo Section un margen por abajo de 30px*/
 section{
     margin-bottom: 30px;
 }
 
+/*Para todo p dentro de una etiqueta con clase .fullContainer. Misma propiedas para la etiqueta footer*/
 .fullContainer p, footer{
     font-size: 2rem;
     text-align: center;
     padding: 2rem;
+
+
+
     color:white;
     min-width:252px;
     
@@ -44,6 +54,7 @@ h1{
 
 .container {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
     /*border: 1px solid rgb(129, 129, 8);*/
 }
